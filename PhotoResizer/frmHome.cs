@@ -247,7 +247,8 @@ namespace PhotoResizer
             outFormat.VideoProfile.Bitrate = new Microsoft.Expression.Encoder.Profiles.VariableUnconstrainedBitrate(bitRate);
             outFormat.VideoProfile.Size = new Size(newWidth, newHeight);
 
-            mediaItem.VideoResizeMode = VideoResizeMode.Letterbox;
+            //mediaItem.VideoResizeMode = VideoResizeMode.Letterbox;
+                        
             mediaItem.OutputFormat = outFormat;
 
             if (!(trimRange == null))
